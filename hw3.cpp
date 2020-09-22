@@ -19,15 +19,13 @@ bool DogishHelper( string word, char letter){
     } else {
  return DogishHelper(word.substr(1,word.length()), letter);
     }
-}*/
+}
 
 bool HasBalancedParentheses(string input){
 
 string testString = input;
 
-
-
-}
+}*/
 
 void ReverseArray(int list[], int length){
   for (int i = 0; i < length; i++) {
