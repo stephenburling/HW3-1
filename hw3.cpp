@@ -20,12 +20,34 @@ bool DogishHelper( string word, char letter){
  return DogishHelper(word.substr(1,word.length()), letter);
     }
 }
-
+*/
 bool HasBalancedParentheses(string input){
 
 string testString = input;
+int counter = 0;
+for(char character:input){
+  cout << "Character : " << character <<endl;
 
-}*/
+  if(string(1,character) == "("){
+    counter++;
+    cout << "Counter equal to: " << counter << endl;
+    }else if (string(1, character) == ")"){
+      counter--;
+          cout << "Counter equal to: " << counter << endl;
+
+    }
+
+  if(counter < 0){
+    return false;
+  }
+}
+
+if (counter == 0){
+  return true;
+}else {
+  return false;
+}
+}
 
 void ReverseArray(int list[], int length){
   for (int i = 0; i < length; i++) {
