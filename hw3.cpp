@@ -86,15 +86,14 @@ bool HasBalancedParentheses(string input){
 
 void ReverseArray(int list[], int length){
   for (int i = 0; i < length; i++) {
-    int hot_seat_one = list[i];
 
-    int hot_seat_two = list[(length - 1) - i];
+  int hot_seat_one = list[i];
+  int hot_seat_two = list[(length -1) - i];
 
-    list[i] = hot_seat_two;
+  list[i] = hot_seat_two;
+  list[(length-1) - i] = hot_seat_one;
 
-    list[(length-1) - i] = hot_seat_one;
-
-    if (i == ((length-1) / 2)) {
+    if (i == ((length-1) / 2)){
       i = 10;
     }
 	}
