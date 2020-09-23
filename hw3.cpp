@@ -8,7 +8,8 @@ DogishHelper(input, letter)
 InXish(input, second_input)
   if DogishHelper(given text, first letter of word) is true,
     set integer letter_location to the first instance of the requested word
-    set word_length
+    set word_length to second_input length
+
 */
 #include <iostream>
 
@@ -83,13 +84,14 @@ void ReverseArray(int list[], int length){
   for (int i = 0; i < length; i++) {
     int hot_seat_one = list[i];
 
-    int hot_seat_two = list[(length -1) - i];
+    int hot_seat_two = list[(length - 1) - i];
 
     list[i] = hot_seat_two;
 
     list[(length-1) - i] = hot_seat_two;
 
-    if (i == ((length-1) / 2)) i = 10;
-
+    if (i == ((length-1) / 2)) {
+      i = 10;
+    }
 	}
 }
