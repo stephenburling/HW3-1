@@ -6,10 +6,14 @@ DogishHelper(input, letter)
   else
     return bool call DogishHelper with input shortened by one letter
 InXish(input, second_input)
-  if DogishHelper(given text, first letter of word) is true,
-    set integer letter_location to the first instance of the requested word
-    set word_length to second_input length
-
+  if word contains letter,
+    create new substring from old input minus the letters before the requested letter
+    if the seeked word length is greater than one,
+      create new shortened seeked word
+    else return true
+  else return false
+  else return true
+    
 */
 #include <iostream>
 
