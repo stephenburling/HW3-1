@@ -6,17 +6,9 @@ using std::string;
 using std::endl;
 
 int main() {
-  //Test ReverseArray();
 /*
-  //cout << DogishHelper("gadgdks",'d') << endl;
-  int arr[] = { 1, 3, 3, 4, 5, 2,7};
-  int length = 7;
-	ReverseArray(arr, length);
+cout << DogishHelper("gadgdks",'d') << endl;
 
-	for (int i = 0; i < length; i++) {
-		cout << arr[i] << " ";
-  }
-*/
 //Test HasBalancedParentheses();
  string statement1 = "(())(()";
  if(HasBalancedParentheses(statement1)){
@@ -24,15 +16,17 @@ int main() {
 }else {
     cout << "These parentheses are NOT balanced." << endl;
 }
-/*
-// Test InDogish();
- string mydogs = "dpoags";
- If(InDogish(mydogs)){
-   	cout << "Part of Dogish? " << endl;
+*/
+ string mydogs = "ffpodags";
+
+ if(InDogish(mydogs)){
+   	cout << mydogs << " is in dogish." << endl;
+ }else{
+    cout << mydogs << " is NOT in dogish." << endl;
  }
 
  // Test bool InXish(sting mytext, sting myword);
-*/
+
 }
 
 
