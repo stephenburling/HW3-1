@@ -17,7 +17,7 @@ cout << DogishHelper("gadgdks",'d') << endl;
     cout << "These parentheses are NOT balanced." << endl;
 }
 */
- string mydogs = "ffpodags";
+ string mydogs = "ffpoagds";
 
  if(InDogish(mydogs)){
    	cout << mydogs << " is in dogish." << endl;
