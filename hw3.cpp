@@ -88,7 +88,7 @@ void ReverseArray(int list[], int length){
 
     list[i] = hot_seat_two;
 
-    list[(length-1) - i] = hot_seat_two;
+    list[(length-1) - i] = hot_seat_one;
 
     if (i == ((length-1) / 2)) {
       i = 10;
