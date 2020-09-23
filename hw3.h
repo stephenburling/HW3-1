@@ -1,9 +1,6 @@
-#ifndef HW3_H
-#define HW3_H
-
 #include <iostream>
 
-using std::string;
+using namespace std;
 
 void ReverseArray(int list[], int length);
 
@@ -14,5 +11,3 @@ bool InDogish(string input);
 bool DogishHelper(string input, char letter);
 
 bool InXish(string input, string secondInput);
-
-#endif // HW3_H
